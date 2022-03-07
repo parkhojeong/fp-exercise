@@ -6,5 +6,4 @@ function map(list, iteratee) {
     return new_list;
 }
 
-const res = map([1,2,3], (num)=> num**2);
-console.log(res)
+module.exports = map;

@@ -6,6 +6,4 @@ const filter = (list, predicate) => {
   return new_list;
 }
 
-
-const res = filter([1,2,3], (val)=> val>2);
-console.log(res)
+module.exports = filter;
