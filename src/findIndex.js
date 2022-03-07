@@ -1,6 +1,6 @@
 function findIndex(list, predicate) {
     for(let i = 0, len = list.length; i<len; i++){
-        if(predicate(list[i])) return i;
+        if(predicate(list[i], i)) return i;
     }
     return -1;
 }

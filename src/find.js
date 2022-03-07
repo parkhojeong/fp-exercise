@@ -1,6 +1,6 @@
 function find(list, predicate) {
     for(let i = 0, len = list.length; i < len; i++){
-        if(predicate(list[i])) return list[i];
+        if(predicate(list[i], i)) return list[i];
     }
 }
 
