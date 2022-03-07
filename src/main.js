@@ -3,6 +3,7 @@ const map = require('./map')
 const bvalue = require('./bvalue')
 const find = require('./find')
 const bmatch = require('./bmatch')
+const findIndex = require('./findIndex')
 
 console.log(filter([1,2,3], (val)=> val>2))
 
@@ -24,4 +25,8 @@ console.log(
 
 console.log(
     find(users, bmatch({age: 10}))
+)
+
+console.log(
+    findIndex(users, bmatch({age:10}))
 )
