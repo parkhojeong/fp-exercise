@@ -1,8 +1,9 @@
-const filter = require('./filter')
-const identity = require('./identity')
+const findIndex = require('./findIndex')
+const not = require('./not')
+const beq = require('./not')
 
 function every(list) {
-    return filter(list, identity).length == list.length;
+    return beq(-1)(findIndex(list, not))
 }
 
 module.exports = every;
